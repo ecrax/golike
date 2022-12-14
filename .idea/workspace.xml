@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ff70998-7f27-4dfc-a5d3-52cf2a047408" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameMap.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/floor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/wall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dungeon.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamedata.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/level.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rougelike.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/world.go" afterDir="false" />
+    <list default="true" id="5ff70998-7f27-4dfc-a5d3-52cf2a047408" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/dice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/player_move_system.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/render_system.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components.go" beforeDir="false" afterPath="$PROJECT_DIR$/components.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level.go" beforeDir="false" afterPath="$PROJECT_DIR$/level.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/world.go" beforeDir="false" afterPath="$PROJECT_DIR$/world.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +68,14 @@
   }
 }</component>
   <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="rougelike" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build rougelike" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="rougelike" />
       <working_directory value="$PROJECT_DIR$" />
@@ -84,6 +83,15 @@
       <package value="rougelike" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="rougelike" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -101,7 +109,17 @@
       <option name="presentableId" value="Default" />
       <updated>1670959220040</updated>
       <workItem from="1670959221376" duration="5139000" />
+      <workItem from="1671009487560" duration="67000" />
+      <workItem from="1671032242083" duration="5611000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1671009545743</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671009545743</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +138,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

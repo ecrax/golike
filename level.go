@@ -31,7 +31,7 @@ func (level *Level) GetIndexFromXY(x, y int) int {
 	return (y * gd.MapWidth) + x
 }
 
-func (level Level) DrawLevel(screen *ebiten.Image) {
+func (level *Level) DrawLevel(screen *ebiten.Image) {
 	gd := NewGameData()
 	for x := 0; x < gd.MapWidth; x++ {
 		for y := 0; y < gd.MapHeight; y++ {
@@ -45,10 +45,12 @@ func (level Level) DrawLevel(screen *ebiten.Image) {
 
 func (level *Level) CreateTiles() []MapTile {
 	gd := NewGameData()
-	tiles := make([]MapTile, 0)
+	tiles := make([]MapTile, gd.MapHeight*gd.MapWidth)
+	index := 0
 
 	for x := 0; x < gd.MapWidth; x++ {
 		for y := 0; y < gd.MapHeight; y++ {
+			index = level.GetIndexFromXY(x, y)
 			if x == 0 || x == gd.MapWidth-1 || y == 0 || y == gd.MapHeight-1 {
 				wall, _, err := ebitenutil.NewImageFromFile("assets/wall.png")
 				if err != nil {
@@ -60,7 +62,7 @@ func (level *Level) CreateTiles() []MapTile {
 					Blocked: true,
 					Image:   wall,
 				}
-				tiles = append(tiles, tile)
+				tiles[index] = tile
 			} else {
 				floor, _, err := ebitenutil.NewImageFromFile("assets/floor.png")
 				if err != nil {
@@ -72,7 +74,7 @@ func (level *Level) CreateTiles() []MapTile {
 					Blocked: false,
 					Image:   floor,
 				}
-				tiles = append(tiles, tile)
+				tiles[index] = tile
 			}
 		}
 	}
